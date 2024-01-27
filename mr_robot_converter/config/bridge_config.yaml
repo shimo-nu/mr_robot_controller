@@ -1,0 +1,13 @@
+name: mr_robot_converter
+from_domain: 100
+to_domain: 1
+topics:
+  robocon/whill/points_raw:
+    type: sensor_msgs/msg/PointCloud2
+    remap: whill/points_raw
+  robocon/whill/joy:
+    type: sensor_msgs/msg/Joy
+    remap: whill/joy
+  robocon/whill/check:
+    type: std_msgs/msg/Bool
+    remap: whill/check
